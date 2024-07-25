@@ -16,10 +16,10 @@ export function MenuStack() {
     return (
         <Stack.Navigator screenOptions={{
             animationEnabled: true,
-            gestureEnable: true
+            gestureEnabled: true
         }}>
-            <Stack.Screen name="Slide1" component={ScreenlSlide1} />
-            <Stack.Screen name="Slide2" component={ScreenlSlide2} />
+            <Stack.Screen name="Slide1" component={Slide1} />
+            <Stack.Screen name="Slide2" component={Slide2} />
         </Stack.Navigator>
     );
 }
