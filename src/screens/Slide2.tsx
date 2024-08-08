@@ -1,8 +1,8 @@
 import { Text, TouchableOpacity, View } from "react-native";
-import { styles } from ".styles"
+import { styles } from "../styles/colors"
 import { MenuStackTypes } from "../navigation/MenuStack.navigation";
 
-export function Slide1({ navigation }: MenuStackTypes) {
+export function Slide2({ navigation }: MenuStackTypes) {
     return (
         <View style={styles.container}>
             <Text style={styles.texto}>Slide 2</Text>
