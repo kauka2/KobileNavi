@@ -8,7 +8,7 @@ export const styles = StyleSheet.create({
         margin: 10,
     },
     buttonSecondary: {
-        backgroundColor: colors.secundary,
+        backgroundColor: colors.secondary,
         borderRadius: 5,
         margin: 10,
     },
@@ -22,6 +22,6 @@ export const styles = StyleSheet.create({
         fontWeight: "bold",
         padding: 10,
         fontSize: 18,
-        textAlign; "center" 
+        textAlign: "center",
     }
 })
