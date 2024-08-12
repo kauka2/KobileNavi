@@ -1,27 +1,36 @@
-import { StyleSheet } from 'react-native';
-import { colors } from '../../styles/colors';
+import { StyleSheet } from "react-native";
 
-export const styles = StyleSheet.create({
+export const Painel = StyleSheet.create({
     buttonPrimary: {
-        backgroundColor: colors.primary,
-        borderRadius: 5,
-        margin: 10,
+        backgroundColor: "pink",
+        height: 40,
+        justifyContent: "center",
+        alignItems: "center",
+        borderWidth: 3,
+        borderRadius: 15,
+        marginBottom: 20,
+        borderColor: "black",
     },
+
     buttonSecondary: {
-        backgroundColor: colors.secondary,
-        borderRadius: 5,
-        margin: 10,
+        backgroundColor: "rgb(190, 220, 255)",
+        height: 40,
+        justifyContent: "center",
+        alignItems: "center",
+        borderWidth: 3,
+        borderRadius: 15,
+        marginBottom: 20,
+        borderColor: "black"
     },
+
     buttonThird: {
-        backgroundColor: colors.third,
-        borderRadius: 5,
-        margin: 10,
-    },
-    text: {
-        color: colors.white,
-        fontWeight: "bold",
-        padding: 10,
-        fontSize: 18,
-        textAlign: "center",
+        backgroundColor: "blue",
+        height: 40,
+        justifyContent: "center",
+        alignItems: "center",
+        borderWidth: 3,
+        borderRadius: 15,
+        marginBottom: 20,
+        borderColor: "black"
     }
 })

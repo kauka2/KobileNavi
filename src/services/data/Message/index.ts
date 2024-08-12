@@ -9,10 +9,18 @@ export interface IResponseMessage {
     title: string
     message: string
     created_at: string
+    user: {
+        id: number
+        name: number
+        email: number
+    }
 }
 class MessageData {
     index() {
         return api.get<IResponseMessage[]>('/message')
+    }
+    store(data: IMessage) {
+        return api.post('/message', data)
     }
 }
 export default new MessageData()

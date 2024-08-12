@@ -1,10 +1,13 @@
-import { View, Text, FlatList } from "react-native";
+import { View, Text, FlatList, TouchableOpacity } from "react-native";
 import { styles } from "./styles";
 import { useEffect, useState } from "react";
 import { apiMessage } from "../../services/data";
 import { IResponseMessage } from "../../services/data/Message";
 import { useAuth } from "../../hook/auth";
-export function Mensagem() {
+import AntDesign from "@expo/vector-icons/AntDesign";
+import { colors } from "../../styles/colors";
+import { MessageTypes } from "../../navigation/message.navigation";
+export function Mensagem({ navigation }: MessageTypes) {
     const [message, setMessage] = useState<IResponseMessage[]>([])
     const { setLoading } = useAuth()
     useEffect(() => {
@@ -14,7 +17,7 @@ export function Mensagem() {
             setMessage(response.data)
         }
         setLoading(false)
-        loadMessage()
+        navigation.addListener("focus", () => loadMessage())
     }, [])
     interface itemMessage {
         item:IResponseMessage
@@ -22,7 +25,8 @@ export function Mensagem() {
     const renderItem = (({item }: itemMessage) => {
         return (
             <View style={styles.item}>
-                <Text style={styles.itemText}>Titulo: {item.tittle}</Text>
+                <Text style={styles.itemText}>Nome: {item.user.name}</Text>
+                <Text style={styles.itemText}>Título: {item.title}</Text>
                 <Text style={styles.itemText}>Mensagem: {item.message}</Text>
             </View>
         )
@@ -37,8 +41,11 @@ export function Mensagem() {
                         keyExtractor={(item) => String(item.id)}
                     />
                 )
-
             }
+            <TouchableOpacity style={styles.botao}
+                onPress={() => navigation.navigate("CadMessage")}>
+                    <AntDesign name="pluscircle" size={48} color={colors.secondary}/>
+                </TouchableOpacity>
         </View>
     )
 }
