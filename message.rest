@@ -1,0 +1,29 @@
+######## Cadastro de mensagem
+POST https://apiadonis2023.onrender.com/message HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer
+
+{
+  "title": "Oi",
+  "message": "Olá?"
+}
+
+######## Listar mensagens
+GET https://apiadonis2023.onrender.com/message HTTP/1.1
+Content-Type: application/json
+
+######## Listar 1 mensagem
+GET https://apiadonis2023.onrender.com/message HTTP/1.1
+Content-Type: application/json
+
+######## Atualizar mensagem
+PUT https://apiadonis2023.onrender.com/message HTTP/1.1
+Content-Type: application/json
+
+{
+  "preco": "62.80"
+}
+
+######## Apagar mensagem
+DELETE https://apiadonis2023.onrender.com/message HTTP/1.1
+Content-Type: application/json
