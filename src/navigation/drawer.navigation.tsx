@@ -2,8 +2,10 @@ import { createDrawerNavigator, DrawerNavigationProp } from '@react-navigation/d
 import { colors } from "../styles/colors";
 import { Ionicons } from "@expo/vector-icons";
 import { TabNavigation } from "./tab.navigation";
+import { Camera } from '../screens/Camera';
 type DrawerParamList = {
     Tab: undefined
+    Camera: undefined
 }
 type DrawerScreenNavigationProp = DrawerNavigationProp<DrawerParamList, 'Tab'>
 export type DrawerTypes = {
@@ -28,8 +30,13 @@ export function DrawerNavigation() {
                 drawerIcon: () => (
                     <Ionicons name="person" size={24} color={colors.white} />
                 ),
-            }}
-            />
+            }}/>
+                <Drawer.Screen name='Camera' component={Camera}
+                options={{
+                    drawerIcon: () => (
+                        <Ionicons name="camera" size={24} color={colors.white} />
+                    ),
+                }} />
         </Drawer.Navigator>
     )
 }

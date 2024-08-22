@@ -3,7 +3,7 @@ import { KeyboardAvoidingView, View, Text, TextInput, Alert } from 'react-native
 import { MaterialIcons, Entypo, Ionicons } from '@expo/vector-icons';
 import { styles } from './styles';
 import { colors } from '../../styles/colors';
-import { ComponentButtonInterface } from '../../components';
+import { ButtonInterface } from '../../components/ButtonInterface';
 import { LoginTypes } from '../../navigation/login.navigation';
 import { apiUser } from '../../services/data';
 import { AxiosError } from 'axios';

@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const Painel = StyleSheet.create({
+export const styles = StyleSheet.create({
     buttonPrimary: {
         backgroundColor: "pink",
         height: 40,
@@ -32,5 +32,9 @@ export const Painel = StyleSheet.create({
         borderRadius: 15,
         marginBottom: 20,
         borderColor: "black"
-    }
+    },
+    text: {
+        fontSize: 20,
+        padding: 10
+    },
 })

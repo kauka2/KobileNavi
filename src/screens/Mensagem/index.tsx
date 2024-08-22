@@ -7,6 +7,7 @@ import { useAuth } from "../../hook/auth";
 import AntDesign from "@expo/vector-icons/AntDesign";
 import { colors } from "../../styles/colors";
 import { MessageTypes } from "../../navigation/message.navigation";
+
 export function Mensagem({ navigation }: MessageTypes) {
     const [message, setMessage] = useState<IResponseMessage[]>([])
     const { setLoading } = useAuth()
@@ -43,7 +44,7 @@ export function Mensagem({ navigation }: MessageTypes) {
                 )
             }
             <TouchableOpacity style={styles.botao}
-                onPress={() => navigation.navigate("CadMessage")}>
+                onPress={() => navigation.navigate("CadMensagem")}>
                     <AntDesign name="pluscircle" size={48} color={colors.secondary}/>
                 </TouchableOpacity>
         </View>
