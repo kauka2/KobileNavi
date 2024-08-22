@@ -16,7 +16,7 @@ export function LoginNavigation() {
     const Stack = createStackNavigator<LoginStackParamList>()
     return (
         <Stack.Navigator id='login' screenOptions={{ headerShown: false }}>
-            <Stack.Screen name='Login' component={Login} />
+            <Stack.Screen name='Login'  component={Login} />
             <Stack.Screen name='Register' component={Register} />
         </Stack.Navigator>
     )
