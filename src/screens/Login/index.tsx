@@ -30,5 +30,5 @@ export function Login({ navigation }: LoginTypes) {
             Alert.alert("Preencha todos os campos!!!");
         }
     }
-    return 
+    
 }
