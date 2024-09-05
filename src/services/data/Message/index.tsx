@@ -1,7 +1,7 @@
 import { api } from "../../api"
 export interface IMessage {
-    title: string
-    message: string
+    title?: string
+    message?: string
 }
 export interface IResponseMessage {
     id: number
