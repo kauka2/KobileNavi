@@ -35,6 +35,6 @@ export const styles = StyleSheet.create({
     },
     text: {
         fontSize: 20,
-        padding: 10
+        padding: 1
     },
 })
