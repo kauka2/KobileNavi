@@ -21,10 +21,10 @@ export function DrawerNavigation() {
     const Drawer = createDrawerNavigator<DrawerParamList>()
     return (
         <Drawer.Navigator screenOptions={{
-            headerStyle: { backgroundColor: colors.secondary },
+            headerStyle: { backgroundColor: colors.primary },
             headerTintColor: colors.white,
             drawerStyle: {
-                backgroundColor: colors.secondary,
+                backgroundColor: colors.primary,
             },
             drawerActiveTintColor: colors.white,
             drawerInactiveTintColor: colors.white
