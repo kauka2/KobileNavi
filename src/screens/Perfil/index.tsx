@@ -12,15 +12,15 @@ export function Perfil() {
                 <Text style={styles.name}>{user?.user.name}</Text>
             </View>
         <View style={styles.sociais}>
-            <FontAwesome5 name="facebook" size={24} color="black" />
-            <Text style={styles.sociaisText}>https://www.facebook.com</Text>
+            <FontAwesome5 name="youtube" size={24} color="black" />
+            <Text style={styles.sociaisText}>https://www.youtube.com</Text>
         </View>
         <View style={styles.sociais}>
-            <FontAwesome5 name="facebook" size={24} color="black" />
+            <FontAwesome5 name="instagram" size={24} color="black" />
             <Text style={styles.sociaisText}>https://www.instragam.com</Text>
         </View>
         <View style={styles.sociais}>
-            <FontAwesome5 name="facebook" size={24} color="black" />
+            <FontAwesome5 name="linkedin" size={24} color="black" />
             <Text style={styles.sociaisText}>https://www.linkedin.com</Text>
         </View>
         <ButtonInterface title="Sair" type="primary"
